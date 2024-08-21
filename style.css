@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    /*colors */
+    --accent-clr:hsl(12 , 88% , 59%);
+    --accent-clr-light:#ffefeb;
+    --accent-clr-shadow:hsl(12, 88%, 80%);
+    --main-clr:hsl(228,39% , 23%);
+
+    --third-clr:rgba(96, 89, 89 , 0.6);
+    --secondary-clr-light:hsl(232 , 12% , 13%);
+    --secondary-clr-dark:hsl(0 0% 0%);
+
+    /*font-family*/
+    --ff-main:"Be Vietnam Pro", sans-serif;
+}
+
+/*general style*/
+body{
+    display: flex;
+    flex-direction: column;
+   
+}
+main{
+    margin: auto;
+    width:  calc(100vw - 5rem) ;
+    overflow-x: hidden;
+    font-family: var(--ff-main);
+    
+}
+
+header{
+    padding-inline: 1rem;
+    padding-block: 3rem;
+}
+header .heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .heading-container i{
+    font-size: 2rem;
+    margin-top:-1rem;
+    cursor: pointer;
+    color: var(--main-clr);
+}
+/**/
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero .container img{
+    width: min(80vw , 800px) ;
+}
+
+.hero .container .hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.hero .container .hero-text h1{
+    color: var(--main-clr);
+    font-weight: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.hero .container .hero-text p{
+    color: var(--third-clr);
+    font-size: 1rem;
+    width: 30ch;
+    line-height: 2.5rem;
+}
+ button{
+    padding: 1rem 2.4rem;
+    margin: 2rem;
+    border: none;
+    background-color: var(--accent-clr);
+    color: var(--accent-clr-light);
+    border-radius:2rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 3px 8px var(--accent-clr-shadow);
+
+}
+
+
+.info .container h2{
+    color: var(--main-clr);
+    font-weight: 6rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-align: center;
+    width: 12ch;
+
+}
+
+
+.info .container  p{
+    color: var(--third-clr);
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+
+.raison .title{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.raison .title {
+    background-color:hsla(12, 88%, 80%, 0.226) ;
+    border-radius: 2rem;
+    
+    position: relative;
+    color: var(--main-clr);
+    margin-bottom: 1rem;
+    width: fit-content;
+    gap: 1rem;
+    padding-right: 3rem;
+}
+
+
+.raison .title::before{
+    content: '01';
+    color: white;
+    background-color: var(--accent-clr);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    
+    
+    
+}
+.raison {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    background-color: var(--accent-clr);
+    padding: 8rem 2rem;
+
+}
+footer .container h1{
+    font-size: 3.8rem;
+    font-family: var(--ff-main);
+    text-align: center;
+    color: white;
+
+    margin-bottom: 2rem;
+}
+
+.reverse{
+    color: var(--accent-clr);
+    background-color:white;
+    box-shadow: 0 0 5px var(--accent-clr-shadow);
+    padding: 1.2rem 3rem;
+}
+
+
+.abs{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    top: -100px;
+}
+
+.simplify-img{
+    position: absolute;
+    left: 0;
+    width: 150px;
+    
+}
